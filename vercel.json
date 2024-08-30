@@ -14,7 +14,7 @@
         }, 
         {
             "src" : "/submit", 
-            "method" : ["POST"], 
+            "methods" : ["POST"], 
             "dest" : "index.py"
         }
     ]
