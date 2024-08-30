@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request
+from waitress import serve
 
 app = Flask(__name__)
 
@@ -12,4 +13,4 @@ def submit():
     return render_template('submit.html', input_text=user_input)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    serve(app, port = "5000")
